@@ -1,5 +1,83 @@
 @font-face {
-    font-family: main-font;
+    font-family: PT_Sans_Narrow;
     src: url(./font/PT_Sans_Narrow/PTSansNarrow-Bold.woff);
     src: url(./font/PT_Sans_Narrow/PTSansNarrow-Regular.woff)
+}
+
+*{
+    font-family: PT_Sans_Narrow, sans-serif;
+    box-sizing: border-box;
+}
+
+.my-page{
+    /* display: flex; */
+}
+
+.primary-section{
+    display: inline-block;
+    /* display: flex;
+    justify-content: center; */
+    width: 30%;
+    height: 100vh;
+    background-image: url(./media/adrian-botica-2gEguvZD9lw-unsplash.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+
+}
+
+.main-feature{
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    /* background-color: black; */
+}
+
+.main-feature > h1{
+    display: inline-block;
+    color: #FFF;
+    font-size: 4.5rem;
+    margin: 0;
+
+}
+
+.main-feature img{
+    height: 15vh;
+}
+
+.sign-up-section{
+    display: inline-block;
+    width: 50%;
+}
+
+.sign-up, .sign-up-intro{
+    padding: 1.6rem;
+    background-color: #F9FAFB;
+}
+
+.sign-up-intro{
+    font-size: 1.6rem;
+    font-weight: 700;
+}
+
+.sign-up{
+    height: 50vh;
+
+}
+
+form{
+ display: flex;
+ flex-wrap: wrap;
+
+}
+
+.form-input-container{
+    flex: 50%; /* or - flex: 0 50% - or - flex-basis: 50% - */
+    /*demo*/
+    margin-bottom: 10px;
+}
+
+input, label {
+    display:block;
+    width: 75%;
 }
